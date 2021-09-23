@@ -7,6 +7,8 @@
  * @FilePath: /jd/lib/pages/home/home.dart
  */
 import 'package:flutter/material.dart';
+import '../../components/swiperWidget.dart';
+import '../../components/titleWidget.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
@@ -20,11 +22,12 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('hone'),
+        title:Center(child:  Text('首页'),),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          Text("hone"),
+          SwiperWidget(),
+          TitleWidget()
         ],
       ),
     );

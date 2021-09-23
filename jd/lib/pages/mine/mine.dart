@@ -20,11 +20,11 @@ class _MinePageState extends State<MinePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('find'),
+        title: Text('mine'),
       ),
       body: Column(
         children: [
-          Text("find"),
+          Text("mine"),
         ],
       ),
     );
